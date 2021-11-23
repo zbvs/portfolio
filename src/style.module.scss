@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+
+//https://stackoverflow.com/questions/14987496/background-color-not-showing-in-print-preview
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+$headerBg: #ffffff;
+$defaultBg: #3d3e42;
+$profileColor: #9099a0;
+$hrColor: #9099a0;
+$projectDividerColor: #000000;
+$linkColor: #66cc99;
+$h3Color: #039A78;
+$h4Color: $h3Color;
+$h5Color: #1a6c8d;
+$boldColor: #4a4e51;
+$codeColor: #d63384;
+$time: 0.6s;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+
+}
+
+p {
+  margin: 0px;
+}
+
+pre {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+a {
+  color: $linkColor;
+}
+
+hr {
+  border-top: 2px dashed $hrColor;
+}
+
+div.body {
+  padding: 10%;
+}
+
+//Cover
+div.cover {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+div.cover > p strong {
+  color: $boldColor
+}
+
+div.cover > p {
+  color: $profileColor
+}
+
+div.cover > h3 {
+  color: $h3Color;
+  margin-top: 70px;
+}
+
+
+//ImageTest
+div.image_test {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
+  padding-top: 50px;
+  break-inside: avoid;
+}
+
+//Project
+div.project {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
+  padding-top: 50px;
+  border-top: 2px solid $projectDividerColor;
+  break-inside: avoid;
+}
+
+div.image {
+  width: 80%;
+}
+
+div.project h2 {
+  color: $codeColor;
+  margin-top: 10px;
+}
+
+
+div.project h4 {
+  color: $h4Color;
+  margin-top: 10px;
+}
+
+div.project h5 {
+  color: $h5Color;
+  margin-top: 10px;
+}
+
+
+div.paragraph {
+  width: 100%;
+  padding: 10px;
+  float: left;
+}
+
+div.halfParagraph {
+  width: 100%;
+  float: left;
+}
+
+div.section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
