@@ -1,6 +1,13 @@
 # - Kiwizzle
 
-### [https://kiwizzle.com/](https://kiwizzle.com/)
+###### URL:  [https://kiwizzle.com/](https://kiwizzle.com/)
+###### Project Repository: [https://github.com/zbvs/kiwizzle-kube](https://github.com/zbvs/kiwizzle-kube)
+
+test 계정:
+
+- ID: testadmin@kiwizzle.com
+
+- PW: testest
 
 ## 목적
 

@@ -1,14 +1,11 @@
 ![avatar](https://avatars.githubusercontent.com/u/11606596?v=4)
 
-# 탁종민(zbvs)'s
+# 탁종민(zbvs)
 
 # Portfolio
 
 This page is renendred from markdown files in [zbvs.github.io](https://github.com/zbvs/zbvs.github.io/tree/master/src/markdown)
 - - -
-
-### I'm a
-
 ## Software Engineer &  
 
 ## (Previous) Security Engineer
@@ -25,8 +22,14 @@ This page is renendred from markdown files in [zbvs.github.io](https://github.co
 
 [Kiwizzle](#kiwizzle) : (웹 서비스) 채용정보 조회, 구독 서비스
 
-제작기간 : 2021 5월 말 ~  2021 8월 말, 구현 끝낸 후 지금까지 리팩토링 등 업데이트 중
+제작기간 : 2021 5월 말 ~  현재, (2021 8월 말에 기능 구현 끝낸 이후 현재까지 리팩토링 중)
+
+사용기술 : Kubernetes, Docker, Nginx, Java/Spring, JPA, MYSQL, OAuth2, JWT, GCP, JUnit5, React, Python 
+
+&nbsp;
 
 [Hotsix Fuzzer](#hotsix) : (보안 관련) V8 엔진 Fuzzer
 
 제작기간 : 2019.12 ~ 2020.2
+
+사용기술 : Node.js, Javascript

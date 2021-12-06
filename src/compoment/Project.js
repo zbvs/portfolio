@@ -104,6 +104,7 @@ export default function Project(props) {
     const dispatch = useDispatch();
     fetchMarkdown(path, setContent);
 
+    const projectId = path.match(/([^\/\.]+)\.([^\/]+)$/)[1];
     const result = {header: undefined, sections: []};
     let projectIndex;
 
@@ -159,7 +160,6 @@ export default function Project(props) {
 
 
     useEffect(() => {
-        //const projectId = path.match(/([^\/\.]+)\.([^\/]+)$/)[1];
         logger.trace("Project projectIndex:", projectIndex)
         if (projectIndex !== undefined) {
             dispatch(addRootIndex(MDIndex, projectIndex));
@@ -167,10 +167,10 @@ export default function Project(props) {
     }, [projectIndex]);
 
     return (
-        <div id={projectIndex !== undefined ? projectIndex.id : null} className={style.project}>
+        <div id={projectId} className={style.project}>
             {
                 originContent.length === 0 ? null :
-                    <div>
+                    <div id={projectIndex !== undefined ? projectIndex.id : null}>
                         {result.header}
                         {result.sections}
                     </div>
