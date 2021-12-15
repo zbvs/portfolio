@@ -1,5 +1,7 @@
 import assert from "assert";
 import {createStore} from "redux";
+import {useEffect} from "react";
+import {logger} from "../Util";
 
 
 export const ROOTINDEX_ADDED = "ROOTINDEX_ADDED";
@@ -15,10 +17,34 @@ export const makeIndex = (id, title, childs) => {
 }
 
 
+
+
+const setScroll = () => {
+    const offset = 0;
+    const trigger = true;
+    const scrollToHashElement = () => {
+        const { hash } = window.location;
+        if (!hash) return;
+        const elementToScroll = document.getElementById(decodeURI(hash.replace("#", "")));
+        if (!elementToScroll) return;
+
+        window.scrollTo({
+            top: elementToScroll.offsetTop - offset,
+            behavior: "instant"
+        });
+    };
+
+    if (!trigger) return;
+
+
+    setTimeout( scrollToHashElement, 1000);
+}
+
 export const addRootIndex = (MDIndex, rootIndex) => {
     assert(typeof rootIndex.id === "string")
     assert(typeof rootIndex.title === "string")
     assert(Array.isArray(rootIndex.childs))
+    setScroll();
     indexMap.set(MDIndex, rootIndex);
     const keys = [...indexMap.keys()];
     keys.sort();

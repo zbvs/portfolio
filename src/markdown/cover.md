@@ -4,7 +4,6 @@
 
 # Portfolio
 
-This page is renendred from markdown files in [zbvs.github.io](https://github.com/zbvs/zbvs.github.io/tree/master/src/markdown)
 - - -
 ## Software Engineer &  
 

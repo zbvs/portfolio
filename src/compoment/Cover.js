@@ -5,6 +5,7 @@ import {fetchMarkdown} from "../Util";
 import style from "../style.module.scss";
 import assert from 'assert';
 import {addRootIndex, makeIndex} from "../store/index-reducer";
+import {config} from "../Config";
 
 function Top(props) {
     const {lines} = props;
@@ -21,12 +22,11 @@ function Top(props) {
     return (
         <>
             <div style={{display: "flex", marginBottom: "25px"}} align="center">
-                <img style={{width: "130px", height: "130px",}} alt={alt} src={src}/>
+                {config.IS_PDF ? null : <img style={{width: "130px", height: "130px", marginRight: "100px",}} alt={alt} src={src}/>}
                 <div style={{
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
-                    marginLeft: "100px",
                     textAlign: "left"
                 }}>
                     <ReactMarkdown>{content}</ReactMarkdown>

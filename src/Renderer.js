@@ -14,12 +14,14 @@ import {store} from "./store/index-reducer";
 import {config} from "./Config";
 
 
+
 function Renderer() {
 
     const targets = [];
     targets.push(<Cover key={targets.length} MDIndex={targets.length} path={cover}/>)
     targets.push(<Project key={targets.length} MDIndex={targets.length} path={kiwizzle}></Project>)
     targets.push(<Project key={targets.length} MDIndex={targets.length} path={hotsix}></Project>)
+
 
     return (
         <Provider store={store}>

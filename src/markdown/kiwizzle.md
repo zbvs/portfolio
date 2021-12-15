@@ -62,4 +62,4 @@ test 계정:
 ## 구조 및 설계
 
 - 구조 및 설계를 포트폴리오에 담기에는 분량이 너무 많아 별도의 문서를 프로젝트 repository에 정리해
-  두었습니다. [https://github.com/zbvs/kiwizzle-kube](https://github.com/zbvs/kiwizzle-kube)
+  두었습니다. [https://github.com/zbvs/kiwizzle-kube](https://github.com/zbvs/kiwizzle-kube#kiwizzle-%ED%82%A4%EC%9C%84%EC%A6%90-%EB%AC%B8%EC%84%9C)

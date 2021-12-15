@@ -1,5 +1,6 @@
 import {config} from "./Config";
 
+
 export const fetchMarkdown = (path, setter) => {
     fetch(path)
         .then(r => r.text())
@@ -7,6 +8,9 @@ export const fetchMarkdown = (path, setter) => {
             setter(mdText);
         });
 }
+
+
+
 
 
 export const debugDivColor = () => {
